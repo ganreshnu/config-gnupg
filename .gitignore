@@ -2,4 +2,7 @@ private-keys*/
 pubring.kbx*
 sshcontrol
 trustdb.gpg
-
+.#*
+openpgp-revocs.d/
+random_seed
+tofu.db
