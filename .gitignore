@@ -6,3 +6,4 @@ trustdb.gpg
 openpgp-revocs.d/
 random_seed
 tofu.db
+S.*
