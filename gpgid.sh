@@ -3,7 +3,8 @@ function gpgid() {
 	read -r -d '' script <<-'EOF'
 /\[A\]/ { f = 1; next }
 f && /Keygrip/ {
-	print $3 > ENVIRON["GNUPGHOME"] "/sshcontrol"
+	("gpgconf --list-dir homedir" | getline homedir)
+	print $3 > homedir "/sshcontrol"
 }
 { f = 0 }
 
