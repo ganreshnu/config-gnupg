@@ -7,3 +7,4 @@ openpgp-revocs.d/
 random_seed
 tofu.db
 S.*
+.gpg-connect_history
